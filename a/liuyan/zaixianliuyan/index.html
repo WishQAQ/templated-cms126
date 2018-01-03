@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="“http://open.weibo.com/wb”">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>在线留言 > 在线留言-我的网站</title>
+<meta name="keywords" content="    ">
+<meta name="description" content="    ">
+<link href="/skin/web/css/style.css" rel="stylesheet">
+<script src="/skin/web/js/jquery-1.8.3.min.js"></script>
+<script src="/skin/web/js/nav.js"></script>
+<script src="/skin/web/js/Marquee.js"></script>
+<!--[if lte ie 6]>
+<script language="javascript" src="/skin/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<body>
+<script src="/skin/web/js/IndexAndFav.js"></script>
+<script src="/skin/web/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<div class="top_bg">
+  <div class="top">
+    <p class="t_one"> <span class="left"><a href="#" class="ta_a" onclick="AddFavorite(window.location,document.title)">收藏红枣业网站</a></span> <span class="right"><a href="#" class="ta_b" onclick="SetHome(this,window.location)">设为首页</a>|<a href="/a/lianxi/">联系我们</a></span> </p>
+    <div class="t_two">
+      <div class="left"><a href="../default.htm"><img src="/skin/web/images/logo.jpg"></a></div>
+      <div class="right">
+        <p class="tt_phone">
+        <form name="formsearch" action="/plus/search.php" method="post">
+		<p class="tt_search">
+           <span class="input"><input name="q" value="请输入搜索关键字" onfocus="this.value=''" id="txt_search"></span>
+           <span class="btn"><a id="btn_search"><input class="btn" type="submit" value="" title="搜索">
+</a></span>
+        </p>
+
+		 </form>
+        <script type="text/javascript">
+	$(document).ready(function() {
+					var searchBox=$("#txt_search");
+					searchBox.focus(function(){
+						searchBox.val("")
+					})
+					searchBox.blur(function(){
+						if(searchBox.val()==""){
+							searchBox.val(this.title)
+						}
+					});
+					searchBox.blur();
+					$("#btn_search").click(function(){
+						if($("#txt_search").val()!=""&&$("#txt_search").val()!="请输入关键字"){
+							window.open("../search.htm�sc="+escape($("#txt_search").val()));
+						}else{
+							alert("请输入关键字");
+						}
+					});
+				});
+	 //var menu=new menu.dd("menu");
+	 //menu.init("menu","menuhover");
+    </script>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top_bg-->
+<div class="nav">
+  <ul>
+    <li><a href="/" class="a">网站首页</a></li>
+    <li><a href="/a/about/" class="a">关于我们</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/about/">公司简介</a>
+	  
+	  <a href="/a/qiyewenhua/">企业文化</a>
+	  
+    </li><li><a href="/a/product/" class="a">产品展示</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/shengtaihongxilie/">生态红系列</a>
+	  
+	  <a href="/a/jiankanghongxilie/">健康红系列</a>
+	  
+	  <a href="/a/lipinhexilie/">礼品盒系列</a>
+	  
+	  <a href="/a/jiagongleixilie/">加工类系列</a>
+	  
+    </li><li><a href="/a/news/" class="a">新闻中心</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/jituanxinwen/">集团新闻</a>
+	  
+	  <a href="/a/qiyexinwen/">企业新闻</a>
+	  
+	  <a href="/a/xingyexinwen/">行业新闻</a>
+	  
+    </li><li><a href="/a/join/" class="a">加盟代理</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/join/">加盟代理</a>
+	  
+    </li><li><a href="/a/wangluo/" class="a">网络销售</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/wangluo/">网络销售</a>
+	  
+    </li><li><a href="/a/liuyan/" class="a">在线留言</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/liuyan/zaixianliuyan/">在线留言</a>
+	  
+    </li><li><a href="/a/lianxi/" class="a">联系方式</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/lianxifangshi/">联系方式</a>
+	  
+    </li>
+	
+  </ul>
+</div>
+<div class="banner" id="ny_banner">
+  <div id="player">
+    <ul class="Limg">
+      <li><img src="/skin/web/banner/1.jpg"></li>
+      <li><img src="/skin/web/banner/2.jpg"></li>
+      <li><img src="/skin/web/banner/3.jpg"></li>
+    </ul>
+    <div class="playerdown">
+      <div class="num"> <cite class="Nubbt"> <span class="on"></span><span></span><span></span> </cite> </div>
+    </div>
+  </div>
+  <!--player-->
+  <script src="/skin/web/js/banner.js" type="text/javascript"></script>
+</div>
+<!--banner-->
+<div class="body_bg">
+  <div class="body">
+    <div class="nl">
+      <div class="nl_nav">
+        <p>在线留言</p>
+        <ul>
+          
+		  <li><a href="/a/liuyan/zaixianliuyan/">在线留言</a></li>
+		  
+        </ul>
+      </div>
+      <div class="nl_contact">
+        <p>地址：XX市XX区XX路XX号<br>
+          电话：020—00000000<br>
+          传真：020—00000000<br>
+          邮件：12345678@qq.com</p>
+      </div>
+    </div>
+    <!--nl-->
+    <div class="nr">
+      <p class="nr_nav"> <span class="left">在线留言</span> <span class="right"><a href='/'>主页</a> > <a href='/a/liuyan/'>在线留言</a> > <a href='/a/liuyan/zaixianliuyan/'>在线留言</a></span> </p>
+      <!--内容区-->
+      <div class="zxbx">
+        <p>&nbsp;&nbsp;您好，请在此详细填写您留言咨询话题，准确的内容和联系方式，我们的工作人员会在24小时内尽快给您回复。我们承诺对您个人信息保密。下面带<span id="red">*</span>不能为空。</p>
+        <div id="Resumefrom">
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+		  <div> <span>留言标题：</span>
+            <input type="text" name='liuyanbiaoti' id='liuyanbiaoti'>
+            <span id="red">*留言标题不能为空</span> </div>
+          <div> <span>留言内容：</span>
+            <textarea name='biaotineirong' id='biaotineirong'></textarea>
+            <span id="red">*留言内容不能为空</span> </div>
+          <div> <span>您的称谓：</span>
+            <select name='chengwei'>
+              <option value="先生">先生
+              <option value="女士">女士
+            </select>
+          </div>
+          <div> <span>电子邮件：</span>
+            <input type="text" style="width:198px;" name='dianziyouxiang' id='dianziyouxiang'>
+          </div>
+          <div> <span>您的姓名：</span>
+            <input type="text" style="width:198px;" name='nidexingming' id='nidexingming'>
+            <span id="red">*姓名不能为空</span> </div>
+          <div> <span>联系电话：</span>
+            <input type="text" style="width:198px;" name='lianxidianhua' id='lianxidianhua'>
+            <span id="red">*电话不能为空</span> </div>
+          <div> <span>联系地址：</span>
+            <input type="text" name='lianxidizhi' id='lianxidizhi'>
+          </div>
+		  <input type="hidden" name="dede_fields" value="liuyanbiaoti,text;biaotineirong,multitext;chengwei,select;dianziyouxiang,text;nidexingming,text;lianxidianhua,text;lianxidizhi,text" />
+<input type="hidden" name="dede_fieldshash" value="72caeb7b197c173069f89675a99303f7" />
+		 <div align='center' style='height:30px;width:50px;padding-top:10px;'>
+		   <input style='height:30px;width:50px;text-align:center;' type="submit" name="submit" value="提 交" class='coolbg' />
+		 </div>
+
+
+		  </form>
+
+        </div>
+      </div>
+      <!--内容区-->
+    </div>
+    <!--nr-->
+  </div>
+</div>
+<!--body--bg-->
+<div class="footer_bg">
+  <div class="footer">
+    <p><span class="left">版权所有欢迎来到某某网站<a href="#">官方微博</a><a>
+      </span> </p>
+    <p> <span class="left">电话：0200000000 Email:admin@dedecms.com</span> <span class="right"><a href="#"><img src="/skin/web/images/cnzz.jpg"></a>闽ICP备12345678号
+        技术支持：<a href="http://www.dedecms.com/" target="_blank">织梦CMS</a></span> </p>
+  </div>
+</div>
+</body>
+</html>

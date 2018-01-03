@@ -1,0 +1,57 @@
+<div class="top_bg">
+  <div class="top">
+    <p class="t_one"> <span class="left"><a href="#" class="ta_a" onclick="AddFavorite(window.location,document.title)">收藏红枣业网站</a></span> <span class="right"><a href="#" class="ta_b" onclick="SetHome(this,window.location)">设为首页</a>|<a href="/a/lianxi/">联系我们</a></span> </p>
+    <div class="t_two">
+      <div class="left"><a href="../default.htm"><img src="/skin/web/images/logo.jpg"></a></div>
+      <div class="right">
+        <p class="tt_phone">
+        <form name="formsearch" action="/plus/search.php" method="post">
+		<p class="tt_search">
+           <span class="input"><input name="q" value="请输入搜索关键字" onfocus="this.value=''" id="txt_search"></span>
+           <span class="btn"><a id="btn_search"><input class="btn" type="submit" value="" title="搜索">
+</a></span>
+        </p>
+
+		 </form>
+        <script type="text/javascript">
+	$(document).ready(function() {
+					var searchBox=$("#txt_search");
+					searchBox.focus(function(){
+						searchBox.val("")
+					})
+					searchBox.blur(function(){
+						if(searchBox.val()==""){
+							searchBox.val(this.title)
+						}
+					});
+					searchBox.blur();
+					$("#btn_search").click(function(){
+						if($("#txt_search").val()!=""&&$("#txt_search").val()!="请输入关键字"){
+							window.open("../search.htm�sc="+escape($("#txt_search").val()));
+						}else{
+							alert("请输入关键字");
+						}
+					});
+				});
+	 //var menu=new menu.dd("menu");
+	 //menu.init("menu","menuhover");
+    </script>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top_bg-->
+<div class="nav">
+  <ul>
+    <li><a href="/" class="a">网站首页</a></li>
+    {dede:channelartlist typeid='top' currentstyle='on'}
+	<li><a href="{dede:field name='typeurl'/}" class="a">{dede:field name='typename'/}</a>
+      <div class="lidiv"> 
+	  {dede:channel type='son'}
+	  <a href="[field:typeurl/]">[field:typename/]</a>
+	  {/dede:channel}
+    </li>
+	{/dede:channelartlist}
+	
+  </ul>
+</div>

@@ -1,0 +1,1 @@
+<div class="img"> <img alt="" src="[field:imgsrc/]"> </div>

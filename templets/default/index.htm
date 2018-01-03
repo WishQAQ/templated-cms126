@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="“http://open.weibo.com/wb”">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="skin/web/css/style.css" rel="stylesheet">
+<script src="skin/web/js/jquery-1.8.3.min.js"></script>
+<script src="skin/web/js/nav.js"></script>
+<script src="skin/web/js/Marquee.js"></script>
+<script src="skin/web/js/IndexAndFav.js"></script>
+<script src="skin/web/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!--[if lte ie 6]>
+<script language="javascript" src="skin/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!--nav-->
+<div class="banner">
+  <div id="player">
+    <ul class="Limg">
+      <li><img src="/skin/web/banner/1.jpg"></li>
+      <li><img src="/skin/web/banner/2.jpg"></li>
+      <li><img src="/skin/web/banner/3.jpg"></li>
+    </ul>
+    <div class="playerdown">
+      <div class="num"> <cite class="Nubbt"> <span class="on"></span><span></span><span></span> </cite> </div>
+    </div>
+  </div>
+  <!--player-->
+  <script src="skin/web/js/banner.js" type="text/javascript"></script>
+</div>
+<!--banner-->
+<div class="body_bg">
+  <div class="body">
+    <div class="ba">
+      <div class="bal">
+        <p class="ba_title"><a href="about/about.htm"></a></p>
+        <dl>
+          <dt><img src="/uploads/allimg/150801/1-150P1204T40-L.jpg" border="0" width="112px" height="125px"></dt>
+          <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某某红枣业有限公司成立于2006年6月9日，广州市市薛店镇食品工业园区，是一家集种植、研发、生产加工、销售、健康文化传播为一体的综合型企业。</dd>
+        </dl>
+      </div>
+      <div class="bac">
+        <p class="ba_title"><a href="jujube/jujubeculture.htm"></a></p>
+        <ul>
+          {dede:arclist row="3" typeid="10" titlelen="30" orderby="pubdate"}
+		  <li><span class="left">·<a href="[field:arcurl /]">[field:title /]</a></span><span class="right">2013-06-28</span></li>	
+		 {/dede:arclist}
+        </ul>
+      </div>
+      <div class="bar">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="222px" height="157px">
+          <param name="movie" value="flash/Flvplayer.swf">
+          <param name="quality" value="high">
+          <param name="wmode" value="opaque">
+          <param name="allowFullScreen" value="true">
+          <param name="FlashVars" value="vcastr_file=http://www.wansuiguoyuan.com/news/web/Pcfiles/Files/13062819211213042710213813042416181620130424144803_3844.flv">
+          <embed src="flash/Flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=http://www.wansuiguoyuan.com/news/web/Pcfiles/Files/13062819211213042710213813042416181620130424144803_3844.flv" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="222px" height="157px">
+        </object>
+      </div>
+    </div>
+
+	<div class="bb"> <a href="###" id="btn" class="bb_left"></a><a href="###" class="bb_right" id="btn">></a>
+      <div class="bb_list">
+        <ul>
+          {dede:arclist row="10" typeid="5" titlelen="20" orderby="pubdate"}
+		  <li>
+            <dt><a href="[field:arcurl /]"><img src="[field:picname/]"></a></dt>
+            <dd><a href="[field:arcurl /]">[field:title /]</a></dd>
+          </li>
+		   {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--body--bg-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>

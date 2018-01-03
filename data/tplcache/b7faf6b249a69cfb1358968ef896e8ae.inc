@@ -1,0 +1,1 @@
+<li><span class="left">·<a href="[field:arcurl /]">[field:title /]</a></span><span class="right">2013-06-28</span></li>

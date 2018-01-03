@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="“http://open.weibo.com/wb”">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>关于我们 > 公司简介-我的网站</title>
+<meta name="keywords" content="    ">
+<meta name="description" content="    ">
+<link href="/skin/web/css/style.css" rel="stylesheet">
+<script src="/skin/web/js/jquery-1.8.3.min.js"></script>
+<script src="/skin/web/js/nav.js"></script>
+<script src="/skin/web/js/Marquee.js"></script>
+<!--[if lte ie 6]>
+<script language="javascript" src="/skin/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<body>
+<script src="/skin/web/js/IndexAndFav.js"></script>
+<script src="/skin/web/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<div class="top_bg">
+  <div class="top">
+    <p class="t_one"> <span class="left"><a href="#" class="ta_a" onclick="AddFavorite(window.location,document.title)">收藏红枣业网站</a></span> <span class="right"><a href="#" class="ta_b" onclick="SetHome(this,window.location)">设为首页</a>|<a href="/a/lianxi/">联系我们</a></span> </p>
+    <div class="t_two">
+      <div class="left"><a href="../default.htm"><img src="/skin/web/images/logo.jpg"></a></div>
+      <div class="right">
+        <p class="tt_phone">
+        <form name="formsearch" action="/plus/search.php" method="post">
+		<p class="tt_search">
+           <span class="input"><input name="q" value="请输入搜索关键字" onfocus="this.value=''" id="txt_search"></span>
+           <span class="btn"><a id="btn_search"><input class="btn" type="submit" value="" title="搜索">
+</a></span>
+        </p>
+
+		 </form>
+        <script type="text/javascript">
+	$(document).ready(function() {
+					var searchBox=$("#txt_search");
+					searchBox.focus(function(){
+						searchBox.val("")
+					})
+					searchBox.blur(function(){
+						if(searchBox.val()==""){
+							searchBox.val(this.title)
+						}
+					});
+					searchBox.blur();
+					$("#btn_search").click(function(){
+						if($("#txt_search").val()!=""&&$("#txt_search").val()!="请输入关键字"){
+							window.open("../search.htm�sc="+escape($("#txt_search").val()));
+						}else{
+							alert("请输入关键字");
+						}
+					});
+				});
+	 //var menu=new menu.dd("menu");
+	 //menu.init("menu","menuhover");
+    </script>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top_bg-->
+<div class="nav">
+  <ul>
+    <li><a href="/" class="a">网站首页</a></li>
+    <li><a href="/a/about/" class="a">关于我们</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/about/">公司简介</a>
+	  
+	  <a href="/a/qiyewenhua/">企业文化</a>
+	  
+    </li><li><a href="/a/product/" class="a">产品展示</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/shengtaihongxilie/">生态红系列</a>
+	  
+	  <a href="/a/jiankanghongxilie/">健康红系列</a>
+	  
+	  <a href="/a/lipinhexilie/">礼品盒系列</a>
+	  
+	  <a href="/a/jiagongleixilie/">加工类系列</a>
+	  
+    </li><li><a href="/a/news/" class="a">新闻中心</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/jituanxinwen/">集团新闻</a>
+	  
+	  <a href="/a/qiyexinwen/">企业新闻</a>
+	  
+	  <a href="/a/xingyexinwen/">行业新闻</a>
+	  
+    </li><li><a href="/a/join/" class="a">加盟代理</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/join/">加盟代理</a>
+	  
+    </li><li><a href="/a/wangluo/" class="a">网络销售</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/wangluo/">网络销售</a>
+	  
+    </li><li><a href="/a/liuyan/" class="a">在线留言</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/liuyan/zaixianliuyan/">在线留言</a>
+	  
+    </li><li><a href="/a/lianxi/" class="a">联系方式</a>
+      <div class="lidiv"> 
+	  
+	  <a href="/a/lianxifangshi/">联系方式</a>
+	  
+    </li>
+	
+  </ul>
+</div>
+<div class="banner" id="ny_banner">
+  <div id="player">
+    <ul class="Limg">
+      <li><img src="/skin/web/banner/1.jpg"></li>
+      <li><img src="/skin/web/banner/2.jpg"></li>
+      <li><img src="/skin/web/banner/3.jpg"></li>
+    </ul>
+    <div class="playerdown">
+      <div class="num"> <cite class="Nubbt"> <span class="on"></span><span></span><span></span> </cite> </div>
+    </div>
+  </div>
+  <!--player-->
+  <script src="/skin/web/js/banner.js" type="text/javascript"></script>
+</div>
+<!--banner-->
+<div class="body_bg">
+  <div class="body">
+    <div class="nl">
+      <div class="nl_nav">
+        <p>公司简介</p>
+        <ul>
+          
+		  <li><a href="/a/about/">公司简介</a></li>
+		  
+		  <li><a href="/a/qiyewenhua/">企业文化</a></li>
+		  
+        </ul>
+      </div>
+      <div class="nl_contact">
+        <p>地址：XX市XX区XX路XX号<br>
+          电话：020—00000000<br>
+          传真：020—00000000<br>
+          邮件：12345678@qq.com</p>
+      </div>
+    </div>
+    <!--nl-->
+    <div class="nr">
+      <p class="nr_nav"> <span class="left">公司简介</span> <span class="right"><a href='/'>主页</a> > <a href='/a/about/'>关于我们</a> > <a href='/a/about/'>公司简介</a></span> </p>
+      <!--内容区-->
+      <div class="hzwh"><p>
+	<span style="font-size: small">&nbsp;某某枣业有限公司是一家集红枣种植、生产、加工、销售、贸易、文化创意为一体的大型农业产业化龙头企业，公司由河南省黄帝故里实业有限公司、新郑隆基生物科技食品有限公司、新郑市裴李岗文化创意商贸有限公司组成。其自主研发的&ldquo;炎黄贡&rdquo;健康红枣系列产品在国内享受很高声誉，公司下属&ldquo;隆基&rdquo;红枣饮品更被业界推崇为&ldquo;中国红枣第一饮品&rdquo;。而裴李岗文化创意公司系国内第一家以八千年裴李岗文化为研究对象，以创意文化礼品为载体，为弘扬中国民族最悠久的历史文明而成立的文化公司，具有很高的文化价值。</span></p>
+<p>
+	<span style="font-size: small">&nbsp;</span></p>
+<p>
+	<span style="font-size: small">&nbsp;公司根植中国红枣之乡、国家优质红枣基地&mdash;&mdash;新郑市，采用驰名中外的新郑优质红枣为原料，继承和弘扬炎黄文化，倾力打造以&ldquo;炎黄贡&rdquo;为核心品牌的红枣系列产品。系列产品因其高尚的品牌情怀和优质营养的产品受到消费者的一直认可与好评，同时寄托&ldquo;祈福九州，护佑中华&rdquo;的精神归属，炎黄贡枣品牌以平民价格惠及国人，让华夏万户千家，幸福健康享受生活。</span></p>
+<p>
+	<span style="font-size: small">&nbsp;</span></p>
+<p>
+	<span style="font-size: small">&nbsp;历经多年发展，公司先后荣获&ldquo;新郑市农业产业化龙头企业&rdquo;、&ldquo;郑州市农业产业化龙头企业&rdquo;、&ldquo;黄帝故里文化研究会理事单位&rdquo;、&ldquo;中央电视台荣誉展播企业&rdquo;等荣誉称号。公司多年一直践行社会公益事业，系&ldquo;中国保护黄河基金会慈善捐赠协作伙伴&rdquo;、&ldquo;新郑黄帝故里拜祖大典饮品合作单位&rdquo;、&ldquo;2008年汶川地震向灾区捐赠荣誉企业&rdquo;；同时公司被郑州市老年协会授予&ldquo;关爱老年群体，共创和谐社会&rdquo;河南省工商局授于&lsquo;河南省文明诚信&rsquo;荣誉企业，彰显了&ldquo;炎黄贡&rdquo;品牌的社会责任和企业的人文情怀。</span></p>
+<p>
+	<span style="font-size: small">&nbsp;</span></p>
+<p>
+	<span style="font-size: small">&nbsp;未来，公司将持续秉承和发扬炎黄文化传统，高举&ldquo;祈福九州、护佑中华&rdquo;的企业愿景，以&ldquo;奉献绿色食品，关怀人民健康&rdquo;为经营理念为根本，通过不断进取和努力，在实现企业价值的同时，不断回报社会和人民。</span></p>
+</div>
+      <!--内容区-->
+    </div>
+    <!--nr-->
+  </div>
+</div>
+<!--body--bg-->
+<div class="footer_bg">
+  <div class="footer">
+    <p><span class="left">版权所有欢迎来到某某网站<a href="#">官方微博</a><a>
+      </span> </p>
+    <p> <span class="left">电话：0200000000 Email:admin@dedecms.com</span> <span class="right"><a href="#"><img src="/skin/web/images/cnzz.jpg"></a>闽ICP备12345678号
+        技术支持：<a href="http://www.dedecms.com/" target="_blank">织梦CMS</a></span> </p>
+  </div>
+</div>
+</body>
+</html>

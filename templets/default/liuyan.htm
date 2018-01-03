@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wb="“http://open.weibo.com/wb”">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="    ">
+<meta name="description" content="    ">
+<link href="/skin/web/css/style.css" rel="stylesheet">
+<script src="/skin/web/js/jquery-1.8.3.min.js"></script>
+<script src="/skin/web/js/nav.js"></script>
+<script src="/skin/web/js/Marquee.js"></script>
+<!--[if lte ie 6]>
+<script language="javascript" src="/skin/js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<body>
+<script src="/skin/web/js/IndexAndFav.js"></script>
+<script src="/skin/web/js/wb.js" type="text/javascript" charset="utf-8"></script>
+{dede:include filename="head.htm"/}
+<div class="banner" id="ny_banner">
+  <div id="player">
+    <ul class="Limg">
+      <li><img src="/skin/web/banner/1.jpg"></li>
+      <li><img src="/skin/web/banner/2.jpg"></li>
+      <li><img src="/skin/web/banner/3.jpg"></li>
+    </ul>
+    <div class="playerdown">
+      <div class="num"> <cite class="Nubbt"> <span class="on"></span><span></span><span></span> </cite> </div>
+    </div>
+  </div>
+  <!--player-->
+  <script src="/skin/web/js/banner.js" type="text/javascript"></script>
+</div>
+<!--banner-->
+<div class="body_bg">
+  <div class="body">
+    <div class="nl">
+      <div class="nl_nav">
+        <p>{dede:field name='typename'/}</p>
+        <ul>
+          {dede:channel   row="10" type="son" col="1"}
+		  <li><a href="[field:typelink/]">[field:typename/]</a></li>
+		  {/dede:channel}
+        </ul>
+      </div>
+      <div class="nl_contact">
+        <p>地址：{dede:global.cfg_dizhi/}<br>
+          电话：{dede:global.cfg_dianhua/}<br>
+          传真：{dede:global.cfg_quanzhen/}<br>
+          邮件：{dede:global.cfg_youxiang/}</p>
+      </div>
+    </div>
+    <!--nl-->
+    <div class="nr">
+      <p class="nr_nav"> <span class="left">{dede:field name='typename'/}</span> <span class="right">{dede:field name='position'/}</span> </p>
+      <!--内容区-->
+      <div class="zxbx">
+        <p>&nbsp;&nbsp;您好，请在此详细填写您留言咨询话题，准确的内容和联系方式，我们的工作人员会在24小时内尽快给您回复。我们承诺对您个人信息保密。下面带<span id="red">*</span>不能为空。</p>
+        <div id="Resumefrom">
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+
+		  <div> <span>留言标题：</span>
+            <input type="text" name='liuyanbiaoti' id='liuyanbiaoti'>
+            <span id="red">*留言标题不能为空</span> </div>
+          <div> <span>留言内容：</span>
+            <textarea name='biaotineirong' id='biaotineirong'></textarea>
+            <span id="red">*留言内容不能为空</span> </div>
+          <div> <span>您的称谓：</span>
+            <select name='chengwei'>
+              <option value="先生">先生
+              <option value="女士">女士
+            </select>
+          </div>
+          <div> <span>电子邮件：</span>
+            <input type="text" style="width:198px;" name='dianziyouxiang' id='dianziyouxiang'>
+          </div>
+          <div> <span>您的姓名：</span>
+            <input type="text" style="width:198px;" name='nidexingming' id='nidexingming'>
+            <span id="red">*姓名不能为空</span> </div>
+          <div> <span>联系电话：</span>
+            <input type="text" style="width:198px;" name='lianxidianhua' id='lianxidianhua'>
+            <span id="red">*电话不能为空</span> </div>
+          <div> <span>联系地址：</span>
+            <input type="text" name='lianxidizhi' id='lianxidizhi'>
+          </div>
+		  <input type="hidden" name="dede_fields" value="liuyanbiaoti,text;biaotineirong,multitext;chengwei,select;dianziyouxiang,text;nidexingming,text;lianxidianhua,text;lianxidizhi,text" />
+<input type="hidden" name="dede_fieldshash" value="72caeb7b197c173069f89675a99303f7" />
+		 <div align='center' style='height:30px;width:50px;padding-top:10px;'>
+		   <input style='height:30px;width:50px;text-align:center;' type="submit" name="submit" value="提 交" class='coolbg' />
+		 </div>
+
+
+		  </form>
+
+        </div>
+      </div>
+      <!--内容区-->
+    </div>
+    <!--nr-->
+  </div>
+</div>
+<!--body--bg-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
